@@ -1,0 +1,24 @@
+*{
+    background-color: rgb(216, 204, 202);
+    font-family: monospace;
+    padding: 8px;
+}
+.container ul li{
+    list-style: none;
+    background-color: white;
+    width: 210px;
+}
+.container ul li:hover{
+    background-color: rgb(195, 181, 179);
+}
+.list-head{
+    width: 100%;
+    max-width: 100px;
+    background-color: blue;
+}
+#btnselect{
+    border-radius: 5px;
+   background-color: white;
+   color: black;
+
+}

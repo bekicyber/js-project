@@ -1,0 +1,35 @@
+.booklist{
+    font-weight: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.booklist h4{
+    margin-right: 320px;
+}
+.book{
+    color: rgb(22, 120, 173);
+}
+.booktitle input{
+    padding: 10px 100px;
+    border-radius: 5px;
+}
+.bookautor input{
+    padding: 10px 100px;
+    border-radius: 5px;
+}
+.bookisbn input{
+    padding: 10px 100px;
+    border-radius: 5px;
+}
+.addBook button{
+    padding: 15px 150px;
+    background-color:  rgb(22, 120, 173);
+    border: none;
+    margin: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+}
+.table{
+    font-size: 30px;
+    margin-left: 600px;
+}

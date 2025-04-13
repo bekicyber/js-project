@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Notification</title>
+    <link rel="stylesheet" href="notifiction.css">
+    <script src="https://kit.fontawesome.com/7d1662375c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <button onclick="showsuc(successMsg)">Success</button>
+        <button onclick="showsuc(invalidMsg)">Invalid</button>
+        <button onclick="showsuc(errorMsg)">Error</button>
+    </div>
+
+    <div id="showalert"></div>
+    
+    <script>
+        const containeralert = document.getElementById("showalert");
+        const successMsg = '<i class="fa-solid fa-circle-check color:green"></i>Successfully Submited';
+        const invalidMsg = '<i class="fa-solid fa-circle-xmark"></i>Message is invalid check and try again!';
+        const errorMsg = '<i class="fa-solid fa-circle-exclamation"></i>Message is error Please fix error';
+        
+        function showsuc(msg){
+            const showalert = document.createElement("div");
+        showalert.classList.add("toast");
+        showalert.innerHTML = msg;
+        containeralert.appendChild(showalert);
+
+        if (msg.includes('error')) {
+            showalert.classList.add('error')
+        }
+        if (msg.includes('invalid')) {
+            showalert.classList.add('invalid');
+        }
+        setTimeout(() => {
+            showalert.remove()
+        }, 6000);
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <p id="demo"></p>
+    <script>
+
+let person= {fullName:"bereket",lastName:"biniyam",nicName:"tedi"};
+person.fullName="abuye";
+//delete person.nicName;
+
+/*person.myfriend = function() {
+return (this.fullName + " " + "and"+ " " + this.lastName).toUpperCase();
+};*/
+
+/*let text = "";
+for (let x in person) {
+    text +=person[x] + " ";
+    }; */
+
+   /* let text = "";
+for (let x in person) {
+  text += person[x] + " ";
+};*/
+
+const myarray = Object.values(person);
+
+document.getElementById("demo").innerHTML = myarray;
+
+//document.getElementById("demo").innerHTML = text;
+//document.getElementById("demo").innerHTML= "my friend is" +" " + person.myfriend();
+
+
+    </script>
+</body>
+</html>

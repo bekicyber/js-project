@@ -1,0 +1,53 @@
+header{
+    background-color: green;
+
+}
+header input{
+    margin-bottom: 20px;
+}
+.itemsubmit{
+    margin-left: 1200px;
+    position: relative;
+}
+.itemsubmit input{
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    width: 250px;
+}
+.itemlister h1{
+    margin-left: 100px;
+    color: white;
+}
+
+.container{
+    background-color: rgb(243, 235, 235);
+    width: 550px;
+    height: 450px;
+    margin-left: 500px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.itemclass{
+margin-right: 400px;
+list-style-type: none;
+}
+.deletebtn{
+    margin-left: 450px;
+    background-color: rgb(192, 39, 39);
+    color: white;
+    border: none;
+    
+}
+.inputbtn{
+   padding: 10px;
+   border-radius: 3px;
+   
+}
+#submitbtn{
+    background-color: rgb(24, 22, 22);
+    color: white;
+    font-size: 15px;
+    border: none;
+}

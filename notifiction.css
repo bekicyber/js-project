@@ -1,0 +1,87 @@
+*{
+    background: rgb(47, 47, 65);
+}
+.container button{
+    background: white;
+    color: black0;
+    border: 0;
+    border-radius: 5px;
+    width: 150px;
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.showalert ul{
+    right: 50px;
+    bottom: 50px;
+    position: absolute;
+}
+.showalert ul li{
+    list-style: none;
+    background: white;
+    width: 200px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+#showalert{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+.toast{
+    width: 400px;
+    height: 80px;
+    background: #fff;
+    font-weight: 500;
+    margin: 15px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transform: translateX(100%);
+    animation: moveleft 0.5s linear forwards;
+}
+@keyframes moveleft {
+    100%{
+        transform: translateX(0);
+    }
+}
+.toast i {
+    color: green;
+    background-color: white;
+    font-size: 30px;
+    margin: 20px 20px;
+}
+.toast.invalid i{
+    color: orange;
+}
+.toast.error i{
+    color: red;
+}
+.toast::after{
+    width: 100%;
+    content: '';
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    height: 5px;
+    background: green;
+    animation: anim 5s linear forwards;
+}
+@keyframes anim {
+   100%{
+    width: 0;
+   }
+}
+.toast.invalid::after{
+    background-color: orange;
+}
+.toast.error::after{
+    background-color: red;
+}

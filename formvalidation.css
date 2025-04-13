@@ -1,0 +1,95 @@
+body{
+    background: rgb(4, 4, 62);
+}
+.form-header{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 15%;
+}
+form{
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 10px;
+    border: 0;
+    border-radius: 8px;
+    font-size: px;
+    font-family: serif;
+    position: relative;
+}
+.fname input{
+    padding: 9px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+.fnamewrong{
+    width: 20px;
+    position: absolute;
+    bottom: 170px;
+    right: 115px;
+}
+.phoneno input{
+    padding: 9px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+.phoneno img{
+    width: 20px;
+    position: absolute;
+    bottom: 123px;
+    right: 115px;
+}
+.emailinput input{
+    padding: 9px;
+    border-top: 0px;
+    border-right: 0;
+    border-left: 0;
+}
+.emailinput img{
+    width: 20px;
+    position: absolute;
+    bottom: 75px;
+    right: 130px;
+}
+.form-header form input{
+    padding: 15px 25px;
+}
+.form-header form button{
+    padding: 10px 35px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 0;
+    background: rgb(4, 4, 62);
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#commontarea{
+    width: 324px;
+    height: 127px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.commontext span i{
+    color: green;
+}
+.commontext{
+    font-size: 14px;
+    color: red;
+}
+.btnwrong{
+    color: red;
+}
+#fnamewrong{
+    color: red;
+}
+.phonewrong{
+    color: red;
+}
+.emailwrong{
+    color: red;
+}

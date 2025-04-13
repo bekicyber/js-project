@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(58, 32, 137);
+}
+.todo{
+    color: blue;
+    text-align: left;
+}
+
+.todobtn input{
+   align-items: left;
+   padding: 25px;
+   margin-left: 0px;
+   border-radius: 40px;
+   border: 0px;
+   background-color: rgb(249, 241, 241);
+   width: 320px;
+}
+  #click  {
+    padding: 18px;
+    border: 0px;
+    border-radius: 28px;
+    margin: 0px;
+    background-color: rgb(255, 52, 16);
+    width: 125px;
+}
+.fulllist{
+    background-color: white;
+    padding: 100px;
+    margin-left: 450px;
+    margin-top: 100px;
+    border-radius: 20px;
+    align-items: center;
+    width: 500px;
+}
+
+.btn-read{
+    position: left;
+    padding-top: 3px;
+    padding-right: 5px;
+    border: 0px;
+    border-radius: 10px;
+    margin-left: 300px;
+    background-color: rgb(255, 52, 16);;
+}
+#unorder li{
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 30px;
+    margin-top:10px;
+}
