@@ -1,0 +1,19 @@
+body{
+    background: linear-gradient 0,10,10(rgba(0,0,0,0.5));
+}
+.container{
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(49, 49, 238);
+    margin-left: 350px;
+    margin-top: 200px;
+}
+.clock span{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
