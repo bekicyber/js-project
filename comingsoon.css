@@ -1,0 +1,16 @@
+body{
+    background: rgb(44, 126, 181);
+}
+.container{
+    margin-left: 5%;
+    margin-top: 20%;
+}
+.container h5, h1{
+    color: white;
+}
+#launch{
+    color: purple;
+}
+.container span{
+    color: white;
+}

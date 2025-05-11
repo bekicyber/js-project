@@ -1,0 +1,35 @@
+body{
+    background: rgb(241, 168, 22);
+    font-family: sans-serif;
+}
+.container{
+    display: ;
+    align-items: center;
+    justify-content: center;
+}
+.container ,h5,h6,h2 {
+    margin-left: 50px;
+}
+input{
+    margin-left: 50px;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 3px;
+}
+i{
+    color: rgb(37, 178, 37);
+}
+button{
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+}
+span{
+    display: block;
+    color: green;
+    margin-left:  50px;
+    font-size: 10px;
+    margin-top: 10px;
+}

@@ -1,31 +1,15 @@
-const quotetext = document.querySelector('.quoteText');
-const nextbtn = document.querySelector('.btnone');
-const quotecont = document.querySelector('.quotecontainer');
-const tweetbtn = document.querySelector('.btntwo');
+let quotesection = document.getElementById("quotesection");
+let author = document.getElementById("author");
+let length = 12;
+function generate(){
+    let quote = {
+        "Tedi" : "ጥለሽኝ  ስትሄጂ <br>ጩህት እሪ   ታዬን <br>እንደምን ላምቀው? <br>አስጭሆ አይደለም ወይ? <br>ሰይጣን የሚለቀው? ", "Tedi" : 'ጠልፎኝ ስንገዳገድ <br>"" ጠላትህ ይደፋ""" <br> ብትል አዘንኩ ከፋኝ <br>እኔኑ ልደፋኝ?' , "Tedi" : "ሴትን የማማለል ጥበብ <br><br> ነገረ 'ቧልተኝነት' <br><br>ይሜ👍", 
+        "Beki" : " 'ሀ' ወደ እግዜር ቀና  'በ' ወደ ምድሪቱ<br>ስጋ እና ነፍስ ያለው  'ሰ' ወ ደ ሁለቱ " , "Tedi"  : "እፎይ ቀለልኩ<br> ተዋረድኩ<br>ሰው አከልኩ፡፡<br>እፎይ ቀለለኝ <br>መቆለል ከለከለኝ<br>ከራሴ ጋር ተነጋገርኩ፡፡<br>ከምኞት ጋር ወረድኩ፡፡<br>እንደጉረኛ መለአክ አልወድቅ <br>እንደሙት በድን አልከብድም<br>እፎይ ቀለልኩ<br>ተዋረድኩ<br>እኔን አከልኩ፡፡"
 
-const quotes = ["ከብሩህ አእምሮ የደበዘዘ ማስታወሻ ይሻላል", 
-    "ጥለሽኝ  ስትሄጂ ጩህት እሪ   ታዬን እንደምን ላምቀው? አስጭሆ አይደለም ወይ? ሰይጣን የሚለቀው?", 
-    "ጠልፎኝ ስንገዳገድ  ጠላትህ ይደፋ ብትል አዘንኩ ከፋኝ እኔኑ ልደፋኝ?"
-
-]
-
-nextbtn.addEventListener('click',showQuote);
-let currentQuestionIndex = 0
-
-function startQuiz(){
-    currentQuestionIndex = 0;
-    nextbtn.innerHTML = "Next";
-    showQuote();}
-
-function showQuote(){
-    let currentQuestion = quotes[currentQuestionIndex];
-
-    let nextquote = document.createElement("h4");
-    nextquote.className = "quotecontainer";
-  quotecont.appendChild(nextquote); 
- 
+    };
+    var autores = Object.keys(quote);
+    var autore = autores [Math.floor(Math.random() * autores.length)];
+    var quotes = quote[autore];
+    quotesection.innerHTML = quotes;
+    author.innerHTML = autore;
 }
-function resetstate(){
-    quotecont.style.display = "";
-}
-startQuiz();

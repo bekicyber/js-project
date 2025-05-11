@@ -1,0 +1,38 @@
+body{
+    background-color: white;
+}
+.container{
+    width: 100%;
+    max-width: 300px;
+    background: rgb(210, 71, 7);
+    margin-left: 400px;
+    margin-top: 200px;
+    display: flex;
+    border-radius: 5px;
+    color: white;
+}
+.years{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 200px;
+    margin-left: 100px;
+    bottom: 20px;
+    top: 150px;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.days h1,h5{
+    margin-left: 85px;
+}
+.years h5{
+    margin-right: 75px;
+    margin-bottom: 100px;
+}
+.days h1{
+    font-size: 50px;
+}
+.years h2,h5 {
+    font-size: 30px;
+    margin-top: 50px;
+}

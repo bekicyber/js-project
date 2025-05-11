@@ -1,0 +1,27 @@
+body{
+    background: rgb(2, 2, 40);
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#left, #right{
+    width: 300px;
+    min-height: 400px;
+    margin: 20px;
+    border: 3px dashed #fff;
+}
+.list{
+    width: 200px;
+    background: rgb(151, 58, 4);
+    color: #fff;
+    margin-left: 25px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: grab;
+}

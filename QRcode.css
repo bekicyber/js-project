@@ -1,0 +1,75 @@
+body{
+    background: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    margin-left: 25%;
+    margin-top: 15%;
+    border-radius: 5px;
+}
+.text{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.inputfild input{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    padding: 10px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.geratelink button{
+    text-align: center;
+    margin-left: 145px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    background: rgb(48, 64, 188);
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.qrcode{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+.qrcode img{
+    width: 100%;
+    padding: 10px;
+}
+.qrcode.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+.errormsg{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
